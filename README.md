@@ -23,4 +23,4 @@ Michael Josuè Morales Mejìa 20220619 1A
 Cesar Andrés López Valdez 20190156 1A
 
 
-Fernando Alonso Martínez Rosales 2022013 1A
+Fernando Alonso Martínez Rosales 20220133 1A
