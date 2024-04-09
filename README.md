@@ -10,6 +10,12 @@ El Sistema de Gestión Estudiantil (SGE) es una plataforma integral diseñada pa
 
 Integrantes:
 Fernando Alonso Moreno Flores 20220664 1A
+
+
 Michael Josuè Morales Mejìa 20220619 1A
+
+
 Cesar Andrés López Valdez 20190156 1A
+
+
 Fernando Alonso Martínez Rosales 2022013 1A
