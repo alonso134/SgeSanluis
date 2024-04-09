@@ -2,7 +2,8 @@
 Proyecto Técnico Científico 2024
 
 Nombre del proyecto
-Sistema de gestion estudiantil Para colegio Catolico San Luis
+Sistema de gestion estudiantil para el centro escolar catolico san luis
+
 
 Descripción del proyecto
 
