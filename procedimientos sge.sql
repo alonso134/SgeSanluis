@@ -2,7 +2,6 @@ DELIMITER $$
 
 -- Inserta un nuevo administrativo en la base de datos con todos sus datos personales y profesionales.
 CREATE PROCEDURE `InsertarAdministrativo` (
-    IN `p_usuario` VARCHAR(50), 
     IN `p_nombre` VARCHAR(30), 
     IN `p_apellidos` VARCHAR(60), 
     IN `p_fecha_de_nacimiento` DATE, 
@@ -13,8 +12,8 @@ CREATE PROCEDURE `InsertarAdministrativo` (
     IN `p_id_usuario` INT
 )
 BEGIN
-    INSERT INTO administrativos(usuario, nombre, apellidos, fecha_de_nacimiento, género, teléfono, dirección, ocupación, id_usuario)
-    VALUES (p_usuario, p_nombre, p_apellidos, p_fecha_de_nacimiento, p_genero, p_telefono, p_direccion, p_ocupacion, p_id_usuario);
+    INSERT INTO administrativos(nombre, apellidos, fecha_de_nacimiento, género, teléfono, dirección, ocupación, id_usuario)
+    VALUES (p_nombre, p_apellidos, p_fecha_de_nacimiento, p_genero, p_telefono, p_direccion, p_ocupacion, p_id_usuario);
 END$$
 
 DELIMITER ;
