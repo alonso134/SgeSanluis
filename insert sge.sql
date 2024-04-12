@@ -10,7 +10,6 @@ INSERT INTO `administrativos` (`id_administrativo`, `nombre`, `apellidos`, `fech
 (9, 'Leonardo', 'Vásquez', '1979-12-13', 'masculino', '963852741', 'Calle Falsa 123', 'Mantenimiento', 37),
 (10, 'Carmen', 'López', '1983-04-27', 'femenino', '789456123', 'Avenida Principal 456', 'Secretario Ejecutivo', 38);
 
-
 INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `id_profesor`) VALUES
 (1, 1, '2024-04-11', 'falta', 1),
 (2, 2, '2024-04-10', 'asistio', 1),
@@ -22,7 +21,6 @@ INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `
 (8, 8, '2024-04-08', 'asistio', 4),
 (9, 1, '2024-04-12', 'falta', 4),
 (10, 9, '2024-04-12', 'asistio', 5);
-
 
 INSERT INTO `comportamiento` (`id_comportamiento`, `codigo`, `descripcion`) VALUES
 (1, 'falta leve', 'Uso inapropiado del celular en clase.'),
@@ -115,6 +113,7 @@ INSERT INTO `llegadas_tarde_institucion` (`id_llegada_tarde_institucion`, `fecha
 (9, '2024-04-15', '08:55:00', 9, 'injustificado'),
 (10, '2024-04-15', '09:00:00', 10, 'justificado');
 
+
 INSERT INTO `materias` (`id_materia`, `nombre`, `descripcion`, `id_profesor`) VALUES
 (1, 'Matemáticas', 'Curso que cubre álgebra, geometría y cálculo.', 1),
 (2, 'Ciencias Naturales', 'Estudio de las ciencias biológicas y físicas.', 3),
@@ -126,6 +125,7 @@ INSERT INTO `materias` (`id_materia`, `nombre`, `descripcion`, `id_profesor`) VA
 (8, 'Geografía', 'Estudio de la superficie terrestre y sus características.', 8),
 (9, 'Educación Cívica', 'Enseñanza de los derechos y responsabilidades ciudadanas.', 9),
 (10, 'Idiomas', 'Estudio de lenguas extranjeras y habilidades comunicativas.', 10);
+
 
 INSERT INTO `notas` (`id_nota`, `id_estudiante`, `id_materia`, `nota`, `id_trimestre`, `fecha_calificacion`) VALUES
 (1, 1, 1, 8.50, 1, '2024-01-15'),
@@ -188,7 +188,6 @@ INSERT INTO `trimestres` (`id_trimestre`, `nombre`) VALUES
 (2, 'Segundo Trimestre'),
 (3, 'Tercer Trimestre');
 
-
 INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `contraseña`) VALUES
 (1, 'joseperez', 'password123'),
 (2, 'mariagomez', 'password123'),
@@ -228,5 +227,3 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `contraseña`) VALUES
 (36, 'usuario28', 'contraseña28'),
 (37, 'usuario29', 'contraseña29'),
 (38, 'usuario30', 'contraseña30');
-
-
