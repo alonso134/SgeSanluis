@@ -157,17 +157,29 @@ INSERT INTO `inscripcion` (`id_inscripcion`, `id_estudiante`, `id_materia`) VALU
 (9, 4, 1),
 (10, 4, 3);
 
-INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `id_profesor`) VALUES
-(1, 1, '2024-04-11', 'falta', 1),
-(2, 2, '2024-04-10', 'asistio', 1),
-(3, 3, '2024-04-10', 'falta', 1),
-(4, 4, '2024-04-09', 'asistio', 2),
-(5, 5, '2024-04-09', 'falta', 2),
-(6, 6, '2024-04-11', 'asistio', 3),
-(7, 7, '2024-04-11', 'falta', 3),
-(8, 8, '2024-04-08', 'asistio', 4),
-(9, 1, '2024-04-12', 'falta', 4),
-(10, 9, '2024-04-12', 'asistio', 5);
+INSERT INTO `comportamiento` (`id_comportamiento`, `codigo`, `descripcion`) VALUES
+(1, 'falta leve', 'Uso inapropiado del celular en clase.'),
+(2, 'falta leve', 'Retraso menor a 10 minutos sin justificación.'),
+(3, 'falta grave', 'Altercado con otro estudiante.'),
+(4, 'falta grave', 'Daño intencional a la propiedad del colegio.'),
+(5, 'falta muy grave', 'Amenazas contra personal o estudiantes.'),
+(6, 'falta muy grave', 'Uso o posesión de sustancias prohibidas en la institución.'),
+(7, 'falta leve', 'No completar asignaciones repetidamente.'),
+(8, 'falta grave', 'Falsificación de permisos o documentos.'),
+(9, 'falta leve', 'No llevar uniforme adecuadamente.'),
+(10, 'falta muy grave', 'Incumplimiento grave de las normas de seguridad.');
+
+INSERT INTO `comportamiento_estudiante` (`id_comportamiento_estudiante`, `id_estudiante`, `id_comportamiento`, `fecha`, `descripcion_adicional`) VALUES
+(1, 1, 2, '2024-04-12', 'El estudiante no cumplió con las expectativas de comportamiento durante la actividad grupal.'),
+(2, 3, 1, '2024-04-13', 'Retraso reiterado sin justificaciones adecuadas.'),
+(3, 4, 3, '2024-04-14', 'Comportamiento disruptivo en clase de matemáticas que requirió intervención.'),
+(4, 2, 5, '2024-04-15', 'Conflicto serio con un compañero que escaló a violencia física.'),
+(5, 5, 2, '2024-04-16', 'Falta de respeto hacia el profesor durante la sesión.'),
+(6, 6, 1, '2024-04-17', 'Uso inapropiado de dispositivos móviles en clase.'),
+(7, 7, 4, '2024-04-18', 'Interrupción constante de la clase sin motivo.'),
+(8, 8, 3, '2024-04-19', 'Actitud desafiante y confrontativa hacia la autoridad.'),
+(9, 9, 2, '2024-04-20', 'Negligencia en la entrega de tareas importantes.'),
+(10, 10, 1, '2024-04-21', 'Falta recurrente a clases sin justificación previa.');
 
 INSERT INTO `llegadas_tarde` (`id_llegada`, `id_estudiante`, `fecha`, `hora`, `id_materia`, `id_profesor`) VALUES
 (1, 1, '2024-04-11', '08:15:00', 1, 1),
@@ -206,28 +218,15 @@ INSERT INTO `observaciones` (`id_observacion`, `id_estudiante`, `id_profesor`, `
 (9, 9, 2, '2024-04-18', 'El estudiante ha mejorado notablemente en matemáticas gracias a la asistencia regular a las tutorías.'),
 (10, 10, 1, '2024-04-19', 'Falta frecuentemente a clases. Es imprescindible hablar con sus padres para discutir su situación.');
 
-
-INSERT INTO `comportamiento` (`id_comportamiento`, `codigo`, `descripcion`) VALUES
-(1, 'falta leve', 'Uso inapropiado del celular en clase.'),
-(2, 'falta leve', 'Retraso menor a 10 minutos sin justificación.'),
-(3, 'falta grave', 'Altercado con otro estudiante.'),
-(4, 'falta grave', 'Daño intencional a la propiedad del colegio.'),
-(5, 'falta muy grave', 'Amenazas contra personal o estudiantes.'),
-(6, 'falta muy grave', 'Uso o posesión de sustancias prohibidas en la institución.'),
-(7, 'falta leve', 'No completar asignaciones repetidamente.'),
-(8, 'falta grave', 'Falsificación de permisos o documentos.'),
-(9, 'falta leve', 'No llevar uniforme adecuadamente.'),
-(10, 'falta muy grave', 'Incumplimiento grave de las normas de seguridad.');
-
-INSERT INTO `comportamiento_estudiante` (`id_comportamiento_estudiante`, `id_estudiante`, `id_comportamiento`, `fecha`, `descripcion_adicional`) VALUES
-(1, 1, 2, '2024-04-12', 'El estudiante no cumplió con las expectativas de comportamiento durante la actividad grupal.'),
-(2, 3, 1, '2024-04-13', 'Retraso reiterado sin justificaciones adecuadas.'),
-(3, 4, 3, '2024-04-14', 'Comportamiento disruptivo en clase de matemáticas que requirió intervención.'),
-(4, 2, 5, '2024-04-15', 'Conflicto serio con un compañero que escaló a violencia física.'),
-(5, 5, 2, '2024-04-16', 'Falta de respeto hacia el profesor durante la sesión.'),
-(6, 6, 1, '2024-04-17', 'Uso inapropiado de dispositivos móviles en clase.'),
-(7, 7, 4, '2024-04-18', 'Interrupción constante de la clase sin motivo.'),
-(8, 8, 3, '2024-04-19', 'Actitud desafiante y confrontativa hacia la autoridad.'),
-(9, 9, 2, '2024-04-20', 'Negligencia en la entrega de tareas importantes.'),
-(10, 10, 1, '2024-04-21', 'Falta recurrente a clases sin justificación previa.');
+INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `id_profesor`) VALUES
+(1, 1, '2024-04-11', 'falta', 1),
+(2, 2, '2024-04-10', 'asistio', 1),
+(3, 3, '2024-04-10', 'falta', 1),
+(4, 4, '2024-04-09', 'asistio', 2),
+(5, 5, '2024-04-09', 'falta', 2),
+(6, 6, '2024-04-11', 'asistio', 3),
+(7, 7, '2024-04-11', 'falta', 3),
+(8, 8, '2024-04-08', 'asistio', 4),
+(9, 1, '2024-04-12', 'falta', 4),
+(10, 9, '2024-04-12', 'asistio', 5);
 
