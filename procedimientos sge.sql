@@ -1,14 +1,13 @@
 DELIMITER $$
 
--- Inserta un nuevo administrativo en la base de datos con todos sus datos personales y profesionales.
 CREATE PROCEDURE `InsertarAdministrativo` (
     IN `p_nombre` VARCHAR(30), 
     IN `p_apellidos` VARCHAR(60), 
     IN `p_fecha_de_nacimiento` DATE, 
-    IN `p_genero` VARCHAR(30), 
+    IN `p_genero` ENUM('masculino', 'femenino'),  -- Asegúrate de que el tipo de parámetro coincida con el de la tabla
     IN `p_telefono` VARCHAR(10), 
-    IN `p_direccion` VARCHAR(200), 
-    IN `p_ocupacion` VARCHAR(100), 
+    IN `p_direccion` VARCHAR(200),
+    IN `p_ocupacion` VARCHAR(100),
     IN `p_id_usuario` INT
 )
 BEGIN
