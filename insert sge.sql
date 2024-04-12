@@ -218,15 +218,14 @@ INSERT INTO `observaciones` (`id_observacion`, `id_estudiante`, `id_profesor`, `
 (9, 9, 2, '2024-04-18', 'El estudiante ha mejorado notablemente en matemáticas gracias a la asistencia regular a las tutorías.'),
 (10, 10, 1, '2024-04-19', 'Falta frecuentemente a clases. Es imprescindible hablar con sus padres para discutir su situación.');
 
-INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `id_profesor`) VALUES
-(1, 1, '2024-04-11', 'falta', 1),
-(2, 2, '2024-04-10', 'asistio', 1),
-(3, 3, '2024-04-10', 'falta', 1),
-(4, 4, '2024-04-09', 'asistio', 2),
-(5, 5, '2024-04-09', 'falta', 2),
-(6, 6, '2024-04-11', 'asistio', 3),
-(7, 7, '2024-04-11', 'falta', 3),
-(8, 8, '2024-04-08', 'asistio', 4),
-(9, 1, '2024-04-12', 'falta', 4),
-(10, 9, '2024-04-12', 'asistio', 5);
-
+INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `id_profesor`)VALUES
+('1', '1', '2024-04-08', 'falta', '1'),  
+('2', '2', '2024-04-08', 'asistio', '2'),
+('3', '3', '2024-04-08', 'falta', '3'),
+('4', '4', '2024-04-08', 'asistio', '4'),
+('5', '5', '2024-04-08', 'falta', '5'),
+('6', '6', '2024-04-08', 'asistio', '6'),
+('7', '7', '2024-04-08', 'falta', '7'),
+('8', '8', '2024-04-08', 'asistio', '8'),
+('9', '9', '2024-04-08', 'falta', '9'),
+('10', '10', '2024-04-08', 'asistio', '10');
