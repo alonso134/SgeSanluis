@@ -32,7 +32,7 @@ CREATE TABLE `administrativos` (
   `nombre` varchar(30) NOT NULL,
   `apellidos` varchar(60) NOT NULL,
   `fecha_de_nacimiento` date DEFAULT NULL,
-  `género` varchar(30) DEFAULT NULL,
+  `género` enum('masculino','femenino') DEFAULT NULL,
   `teléfono` varchar(10) NOT NULL,
   `dirección` varchar(200) NOT NULL,
   `ocupación` varchar(100) NOT NULL,
