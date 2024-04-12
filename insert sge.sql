@@ -1,14 +1,15 @@
-INSERT INTO `administrativos` (`id_administrativo`, `usuario`, `nombre`, `apellidos`, `fecha_de_nacimiento`, `género`, `teléfono`, `dirección`, `ocupación`, `id_usuario`) VALUES
-(1, 'usuario12', 'Carlos', 'Vega', '1980-04-15', 'masculino', '5551234', 'Calle Falsa 123', 'Secretario', 29),
-(2, 'usuario13', 'Martha', 'Ruiz', '1975-08-22', 'femenino', '5555678', 'Avenida Siempre Viva 456', 'Contador', 30),
-(3, 'usuario14', 'Luis', 'Dominguez', '1982-01-30', 'masculino', '55591011', 'Boulevard de las Rosas 789', 'Coordinador Académico', 31),
-(4, 'usuario20', 'Sandra', 'Molina', '1985-09-16', 'femenino', '321654987', 'Calle 123 #45-67', 'Asistente Administrativo', 32),
-(5, 'usuario21', 'Roberto', 'Quintero', '1978-03-11', 'masculino', '987654321', 'Avenida 765 #12-34', 'Director Administrativo', 33),
-(6, 'usuario22', 'Patricia', 'Fernández', '1982-07-24', 'femenino', '654321987', 'Diagonal 89 #01-23', 'Recursos Humanos', 34),
-(7, 'usuario23', 'Jorge', 'Martinez', '1975-11-02', 'masculino', '369258147', 'Transversal 456 #78-90', 'Tesorero', 35),
-(8, 'usuario24', 'Andrea', 'Gutierrez', '1988-05-19', 'femenino', '147258369', 'Carrera 32 #58-79', 'Jefe de Departamento', 36),
-(9, 'usuario25', 'Leonardo', 'Vásquez', '1979-12-13', 'masculino', '963852741', 'Calle Falsa 123', 'Mantenimiento', 37),
-(10, 'usuario26', 'Carmen', 'López', '1983-04-27', 'femenino', '789456123', 'Avenida Principal 456', 'Secretario Ejecutivo', 38);
+INSERT INTO `administrativos` (`id_administrativo`, `nombre`, `apellidos`, `fecha_de_nacimiento`, `género`, `teléfono`, `dirección`, `ocupación`, `id_usuario`) VALUES
+(1, 'Carlos', 'Vega', '1980-04-15', 'masculino', '5551234', 'Calle Falsa 123', 'Secretario', 29),
+(2, 'Martha', 'Ruiz', '1975-08-22', 'femenino', '5555678', 'Avenida Siempre Viva 456', 'Contador', 30),
+(3, 'Luis', 'Dominguez', '1982-01-30', 'masculino', '55591011', 'Boulevard de las Rosas 789', 'Coordinador Académico', 31),
+(4, 'Sandra', 'Molina', '1985-09-16', 'femenino', '321654987', 'Calle 123 #45-67', 'Asistente Administrativo', 32),
+(5, 'Roberto', 'Quintero', '1978-03-11', 'masculino', '987654321', 'Avenida 765 #12-34', 'Director Administrativo', 33),
+(6, 'Patricia', 'Fernández', '1982-07-24', 'femenino', '654321987', 'Diagonal 89 #01-23', 'Recursos Humanos', 34),
+(7, 'Jorge', 'Martinez', '1975-11-02', 'masculino', '369258147', 'Transversal 456 #78-90', 'Tesorero', 35),
+(8, 'Andrea', 'Gutierrez', '1988-05-19', 'femenino', '147258369', 'Carrera 32 #58-79', 'Jefe de Departamento', 36),
+(9, 'Leonardo', 'Vásquez', '1979-12-13', 'masculino', '963852741', 'Calle Falsa 123', 'Mantenimiento', 37),
+(10, 'Carmen', 'López', '1983-04-27', 'femenino', '789456123', 'Avenida Principal 456', 'Secretario Ejecutivo', 38);
+
 
 INSERT INTO `asistencia` (`id_asistencia`, `id_estudiante`, `fecha`, `estado`, `id_profesor`) VALUES
 (1, 1, '2024-04-11', 'falta', 1),
